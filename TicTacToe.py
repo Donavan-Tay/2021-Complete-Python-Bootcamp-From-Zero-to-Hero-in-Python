@@ -1,10 +1,15 @@
-from IPython.display import clear_output
+from os import system
 from random import randint
 
 
+def clear_output():
+    return system('cls')
+
+
 def display_board(board):
-    # Initialise 3x3 board
+    # clears command console
     clear_output()
+    # Initialise 3x3 board
     print(board[7] + " # " + board[8] + " # " + board[9])
     print("#" * 9)
     print(board[4] + " # " + board[5] + " # " + board[6])
